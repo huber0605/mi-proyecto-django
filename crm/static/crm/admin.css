@@ -1,0 +1,110 @@
+/* ----------- ESTILOS GENERALES DE ADMIN ----------- */
+
+/* Fuente y color general de fondo del panel admin */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipo de letra general */
+    background-color: #12010c; /* Color de fondo claro */
+    color: #f3f3f3; /* Color de texto general */
+}
+
+
+/* ----------- ENCABEZADO SUPERIOR DEL ADMIN ----------- */
+
+#header {
+    background-color: #b520b5ea; /* Fondo oscuro del encabezado superior */
+    border-bottom: 4px solid #eef1f1; /* Línea inferior rosa */
+    padding: 10px 20px; /* Espaciado interno */
+}
+
+
+/* ----------- TÍTULO Y LOGO EN ENCABEZADO ----------- */
+
+#site-name {
+    display: flex; /* Muestra el logo y el texto en la misma línea */
+    align-items: center; /* Centra verticalmente */
+    gap: 15px; /* Espacio entre logo y texto */
+}
+
+/* Estilo forzado para el título del encabezado */
+#site-name a {
+    color: #0a0104 !important;  /* Cambia este color al que tú quieras */
+    font-size: 36px !important; /* Ajusta el tamaño */
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/* Efecto cuando pasas el mouse por el título */
+#site-name a:hover {
+    color: #f9f4f4 !important; /* Cambia este color por el que desees para el efecto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Sombra opcional para mejorar visibilidad */
+}
+
+
+/* Estilo del logo */
+#site-name img.logo {
+    height: 80px;/* ALTO del logo ← AJUSTA AQUÍ si está muy grande o pequeño */
+    width: auto;    /* Mantiene proporción */
+    border-radius: 18px; /* Bordes ligeramente redondeados */
+}
+
+
+/* ----------- MÓDULOS LATERALES (panel izquierdo) ----------- */
+
+.module {
+    background-color: #ad2ba8d2; /* Fondo blanco para cada módulo */
+    border-left: 5px solid #f3f2f2; /* Borde izquierdo rosa */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* ----------- ESTILOS DE ENLACES ----------- */
+
+a {
+    color: #007bff; /* Azul claro */
+}
+a:visited {
+    color: #6f42c1; /* Morado para enlaces visitados */
+}
+a:hover {
+    color: #0056b3; /* Azul oscuro al pasar el mouse */
+    text-decoration: underline;
+}
+
+
+/* ----------- BOTONES (Guardar, Eliminar, etc.) ----------- */
+
+.button, input[type=submit], .submit-row input {
+    background-color: #2513f3; /* Fondo rosado */
+    color: #fff;               /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;        /* Bordes redondeados */
+    font-weight: bold;
+    cursor: pointer;           /* Cambia cursor al pasar encima */
+}
+
+.button:hover, input[type=submit]:hover {
+    background-color: #33d64e; /* Oscurece al pasar el mouse */
+}
+
+
+/* ----------- PIE DE PÁGINA DEL ADMIN ----------- */
+
+#footer {
+    background-color: #bb65b1; /* Fondo igual al header */
+    color: #d1f164;               /* Texto gris claro */
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+/* ----------- CABECERAS DE TABLAS (en listado de modelos) ----------- */
+
+thead th {
+    background-color: #0a0008; /* Fondo oscuro */
+    color: #fbfbfa;            /* Texto blanco */
+}
+

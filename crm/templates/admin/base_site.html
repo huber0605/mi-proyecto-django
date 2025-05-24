@@ -1,0 +1,19 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block extrastyle %}
+  {{ block.super }}
+  <link rel="stylesheet" type="text/css" href="{% static 'crm/admin.css' %}">
+{% endblock %}
+
+{% block title %}SUBLIME BY ZARELLA{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+    <img class="logo" src="{% static 'crm/logo.jpg' %}" alt="Logo">
+    <a href="{% url 'admin:index' %}">SUBLIME BY ZARELLA</a>
+</h1>
+{% endblock %}
+
+
+
