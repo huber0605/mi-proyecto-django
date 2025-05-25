@@ -4,3 +4,7 @@ __pycache__/
 *.py[cod]
 
 db_local_backup.sqlite3
+
+venv/
+env/
+.mi_env/
