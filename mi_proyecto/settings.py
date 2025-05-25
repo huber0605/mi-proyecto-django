@@ -126,7 +126,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_URL = '/static/'
 
 # Carpeta donde Django copiará todos los archivos estáticos para producción
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
