@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-8^1-&_$8^)++-0b_-@6!61$qu402u*yuk=@h4tq$7m@8*kx==2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1' ,"hramirezq.pythonanywhere.com"]
+
 
 
 # Application definition
@@ -117,10 +118,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
 from pathlib import Path
 
-STATICFILES_DIRS = [BASE_DIR / "static"]
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# URL para acceder a archivos estáticos en navegador
+STATIC_URL = '/static/'
+
+# Carpeta donde Django copiará todos los archivos estáticos para producción
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# Si tienes una carpeta estática global aparte, la puedes listar aquí,
+# sino puedes comentar o eliminar esta línea
+# STATICFILES_DIRS = [
+#     BASE_DIR / "static",
+# ]
+
 
 
 # Default primary key field type
