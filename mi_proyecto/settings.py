@@ -128,12 +128,12 @@ STATIC_URL = '/static/'
 # Carpeta donde Django copiará todos los archivos estáticos para producción
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-# Si tienes una carpeta estática global aparte, la puedes listar aquí,
-# sino puedes comentar o eliminar esta línea
-# STATICFILES_DIRS = [
-#     BASE_DIR / "static",
-# ]
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
+STATICFILES_DIRS = [
+    BASE_DIR / 'crm' / 'static',
+]
 
 
 # Default primary key field type
