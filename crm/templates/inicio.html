@@ -1,11 +1,15 @@
 <!-- crm/templates/inicio.html -->
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Página de Inicio</title>
+    <link rel="stylesheet" href="{% static 'crm/admin.css' %}">
 </head>
 <body>
     <h1>¡Bienvenido a mi CRM!</h1>
+    <img src="{% static 'crm/logo.jpg' %}" alt="Logo CRM">
 </body>
 </html>
+
